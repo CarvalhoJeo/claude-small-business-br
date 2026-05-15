@@ -1,0 +1,9 @@
+{
+  "name": "small-business-br",
+  "private": true,
+  "version": "0.2.1-br-draft",
+  "description": "Brazil-adapted small business plugin",
+  "scripts": {
+    "validate:plugin": "npx -y @anthropic-ai/claude-code plugins validate ."
+  }
+}
