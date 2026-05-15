@@ -1,0 +1,9 @@
+{
+  "name": "small-business-br",
+  "version": "0.2.1-br-draft",
+  "description": "Brazil-adapted small business workflows for cash flow, month-end prep, leads, campaigns, and operations. Derived from Anthropic's open-source small-business plugin and intended for localization to Brazilian tools and compliance realities.",
+  "author": {
+    "name": "Anthropic + local adaptation draft"
+  },
+  "keywords": ["smb", "brazil", "finance", "marketing", "hr", "operations", "all-in-one", "small business"]
+}
