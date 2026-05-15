@@ -22,9 +22,9 @@ Default to the previous calendar month unless the owner says otherwise.
 
 ### Step 2 — Pull source data
 Use the best available source mix:
-- ERP export (Conta Azul, Omie, Bling, Nibo, QuickBooks)
-- bank statement CSV
-- payment exports (Pix, boleto, card/acquirer, Mercado Pago, PayPal, Stripe, Square)
+- ERP export (Conta Azul, Omie, Bling, Nibo, spreadsheet)
+- bank statement CSV / OFX
+- payment exports (Pix, boleto, card/acquirer, Mercado Pago, Asaas)
 - invoice / NFS-e / NF-e summary when available
 
 ### Step 3 — Reconcile the basics

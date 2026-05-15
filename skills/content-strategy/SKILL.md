@@ -3,7 +3,8 @@ name: content-strategy
 description: >
   Builds a 30-day content and offer brief for a Brazilian small business using
   sales data, channel context, seasonality, and owner priorities. Works from
-  ERP exports, payment summaries, campaign notes, or connected tools.
+  ERP exports, payment summaries, campaign notes, marketplace performance, or
+  connected tools.
 ---
 
 # Content Strategy (Brazil)
@@ -19,7 +20,7 @@ Answer one practical question:
    - ERP / revenue export
    - payment summary
    - campaign notes
-   - QuickBooks / PayPal if connected
+   - marketplace or ecommerce summary
 2. Identify:
    - best sellers
    - weak sellers

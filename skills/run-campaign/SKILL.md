@@ -2,8 +2,8 @@
 name: run-campaign
 description: >
   Runs a Brazil-first campaign workflow covering sales analysis, offer brief,
-  Canva assets, and a channel plan for Instagram, WhatsApp, email, or mixed
-  execution.
+  content angles, asset checklist, and a channel plan for Instagram, WhatsApp,
+  email, or mixed execution.
 allowed-tools: Read, WebFetch, Bash
 ---
 
@@ -24,17 +24,15 @@ Use the best available revenue and offer data to identify:
 
 Present the brief and wait for approval.
 
-## Step 2 — Build assets
+## Step 2 — Build the campaign pack
 
-Trigger `canva-creator`.
-
-Turn the approved brief into:
-- post ideas
-- Canva asset list
+Using the approved brief, produce:
+- post/message ideas
+- asset checklist for Canva or the owner's design workflow
 - caption drafts
 - story/reel/static recommendations when relevant
-
-If the owner is WhatsApp-heavy, also prepare short message variants for broadcast or one-to-one follow-up.
+- short WhatsApp message variants if the business sells there
+- email angle if email is part of the mix
 
 Present assets and drafts. Wait for approval.
 
@@ -50,7 +48,7 @@ Produce:
 
 ## Guardrails
 
-- Never assume HubSpot is the send engine.
+- Never assume a specific CRM or send engine.
 - Never send automatically.
 - Prefer Instagram + WhatsApp + email mixes when the owner is not running a full CRM stack.
 - If a connector is missing, switch to export/manual mode instead of aborting immediately.

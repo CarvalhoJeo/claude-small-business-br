@@ -16,9 +16,9 @@ Trigger `cash-flow-snapshot`.
 
 Use whatever data is available:
 - ERP exports
-- bank CSV
+- bank CSV / OFX
 - receivables spreadsheets
-- QuickBooks / PayPal / Stripe / Square if connected
+- Mercado Pago / Asaas / acquirer exports if connected or uploaded
 - pasted fixed-cost list
 
 Focus on:

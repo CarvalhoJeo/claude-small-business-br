@@ -2,11 +2,11 @@
 name: cash-flow-snapshot
 description: >
   Builds a 30/60/90-day cash flow view for a Brazilian small business using any
-  mix of ERP exports, bank CSVs, receivables spreadsheets, QuickBooks, PayPal,
-  Stripe, Square, Mercado Pago exports, or pasted fixed-cost data. Use when the
-  owner asks about cash pressure, payroll risk, runway, next month's cash, or
-  whether receivables will cover obligations.
-compatibility: "Works best with structured exports. Prefer live connectors when available; otherwise use CSV/spreadsheet fallback."
+  mix of ERP exports, bank CSVs, receivables spreadsheets, Pix/boleto/card
+  reports, Mercado Pago or Asaas exports, and pasted fixed-cost data. Use when
+  the owner asks about cash pressure, payroll risk, runway, next month's cash,
+  or whether receivables will cover obligations.
+compatibility: "Works best with structured exports. Prefer Brazil-first connectors when available; otherwise use CSV/spreadsheet fallback."
 ---
 
 # Cash Flow Snapshot (Brazil)
@@ -27,10 +27,10 @@ This should reflect Brazilian operating reality:
 ### Step 1 — Identify usable sources
 
 Use any combination of:
-1. ERP export (Conta Azul, Omie, Bling, Nibo, QuickBooks)
-2. bank statement CSV
+1. ERP export (Conta Azul, Omie, Bling, Nibo, spreadsheet)
+2. bank statement CSV / OFX
 3. receivables spreadsheet
-4. payment exports (PayPal, Stripe, Square, Mercado Pago if uploaded)
+4. payment exports (Mercado Pago, Asaas, acquirer reports, Pix/boleto reports)
 5. pasted fixed-cost list
 
 If the owner has no live connector, switch immediately to upload/manual mode.
@@ -79,7 +79,7 @@ Flag the top 5 risks by practical importance, for example:
 - too much dependence on one late customer
 - DAS / tax deadline collides with payroll week
 - bank balance covers routine expenses but not one-off obligations
-- data gap: card or Pix settlements missing from source files
+- data gap: card, Pix, or boleto settlements missing from source files
 
 ### Step 5 — Deliver output
 

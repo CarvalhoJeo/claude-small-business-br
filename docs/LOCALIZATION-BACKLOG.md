@@ -1,17 +1,18 @@
 # Localization backlog
 
 ## Highest priority
-- rewrite remaining US-centric skills that still assume QuickBooks/PayPal/HubSpot as default
-- add more Portuguese examples
-- add Brazilian accountant handoff examples
-- define Mercado Pago / Pix export fallback conventions
-- define WhatsApp lead-sheet conventions
+- keep only localized skills active in `skills/`
+- remove default references to PayPal / QuickBooks / HubSpot as the plugin's implied stack
+- define import schemas for Pix, boleto, CSV, OFX, NF-e / NFS-e, and WhatsApp lead logs
+- implement one Brazil-first payment connector (Mercado Pago or Asaas)
+- implement one Brazil-first ERP connector (Omie, Conta Azul, or Bling)
 
 ## Next priority
-- create examples for service business, ecommerce, agency, and clinic
-- tune monday-brief / friday-brief for Brazilian owner language
-- refine tax-prep and complaint handling examples
+- add more Portuguese examples
+- add Brazilian accountant handoff examples
+- add RD Station and Nuvemshop implementation notes
+- tune wording for service business, ecommerce, agency, and clinic use cases
 
 ## Later
-- evaluate real MCP/integration options for local ERPs and payment platforms
-- package repo for public distribution
+- evaluate community MCP servers tool-by-tool before trusting them in production
+- package repo for public distribution with a clearer "localized subset" message

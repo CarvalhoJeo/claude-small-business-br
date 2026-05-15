@@ -1,6 +1,6 @@
 ---
 name: customer-pulse
-version: 0.2.0-br
+version: 0.2.1-br
 description: >
   Aggregates customer complaints, disputes, tickets, WhatsApp excerpts,
   Instagram messages/comments, email threads, and pasted reviews into a themes
@@ -16,7 +16,7 @@ description: >
 2. Pull the best available customer-signal sources:
    - email threads
    - ticket system / CRM if present
-   - PayPal or Mercado Pago dispute exports if available
+   - Mercado Pago or marketplace dispute exports if available
    - pasted WhatsApp messages
    - pasted Instagram DMs/comments
    - review text copied from Google / iFood / marketplace / social comments

@@ -5,7 +5,7 @@ description: >
   stack, choose one or two useful data sources, run a quick win workflow, and
   store business context for later skills. Built for businesses that may use
   WhatsApp, Instagram, Pix, boleto, Mercado Pago, Conta Azul, Omie, Bling,
-  Nibo, or spreadsheets instead of a fully connected US SaaS stack.
+  Nibo, RD Station, or spreadsheets instead of a fully connected foreign SaaS stack.
 ---
 
 # SMB Onboard (Brazil)
@@ -42,7 +42,7 @@ Ask one question at a time.
 4. **Where leads come from**
    - WhatsApp, Instagram DM, website form, indicação, RD Station, CRM, spreadsheet
 5. **Finance stack**
-   - Conta Azul, Omie, Bling, Nibo, QuickBooks, spreadsheet, accountant-only
+   - Conta Azul, Omie, Bling, Nibo, spreadsheet, accountant-only
 6. **Who closes the books**
    - owner, finance person, external accountant
 7. **Top three recurring headaches**
@@ -71,10 +71,10 @@ Examples:
 Pick the most obvious workflow from the owner's biggest pain.
 Examples:
 - cash pain → `/plan-payroll`
-- messy month-end → `/close-month`
-- weak pipeline → `/call-list`
+- messy month-end → `/month-end-prep`
+- weak pipeline → `/lead-triage`
 - sales drop → `/run-campaign`
-- angry customers → `/handle-complaint`
+- angry customers → `/ticket-deflector`
 
 The first run should be small and concrete, not comprehensive.
 
@@ -107,7 +107,7 @@ If the owner prefers another phrase or day, store it.
 
 ## Guardrails
 
-- Never assume the business uses QuickBooks, PayPal, or HubSpot.
+- Never assume the business uses foreign default SaaS tools.
 - Never shame the owner for using spreadsheets.
 - Never connect tools on the owner's behalf.
 - Prefer the easiest data source that gets a real result today.

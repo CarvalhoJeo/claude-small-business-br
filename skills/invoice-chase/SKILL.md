@@ -1,12 +1,12 @@
 ---
 name: invoice-chase
-version: 0.2.0-br
+version: 0.2.1-br
 description: >
   Drafts overdue receivable follow-ups for Brazilian SMBs using ERP exports,
-  invoice lists, QuickBooks, PayPal, Stripe, or pasted collections data.
-  Supports email-first and WhatsApp-friendly follow-up drafts. Use when the
-  owner asks who owes them money, wants to charge late customers, or needs a
-  collections priority list.
+  receivables spreadsheets, billing platform exports, Mercado Pago / Asaas
+  exports, or pasted collections data. Supports email-first and WhatsApp-ready
+  follow-up drafts. Use when the owner asks who owes them money, wants to
+  charge late customers, or needs a collections priority list.
 ---
 
 # Invoice Chase (Brazil)
@@ -15,9 +15,9 @@ description: >
 
 1. Pull overdue receivables from the best available source:
    - Conta Azul / Omie / Bling / Nibo export
-   - QuickBooks
    - receivables spreadsheet
    - billing platform export
+   - Mercado Pago / Asaas / boleto / Pix support export
 2. Exclude anything marked as recently paid, under negotiation, or already promised for a near date.
 3. Rank each customer by:
    - amount due

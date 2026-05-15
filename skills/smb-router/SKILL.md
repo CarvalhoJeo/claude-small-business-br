@@ -35,32 +35,23 @@ Pick **one** best match.
 | Owner says something like... | Route to |
 |---|---|
 | "vai dar para pagar a folha?" / "o caixa está apertado" / "quem está me devendo" | `/plan-payroll` |
-| "como fica o próximo mês?" / "me dá uma previsão de caixa" / "runway" | `/month-heads-up` |
-| "fecha o mês" / "reconcilia isso" / "quero entender o P&L" | `/close-month` |
-| "minha margem está ruim" / "devo aumentar preço?" | `/price-check` |
-| "separa o material do contador" / "impostos" / "Simples" / "DAS" | `/tax-prep` |
+| "como fica o próximo mês?" / "me dá uma previsão de caixa" / "runway" | `/cash-flow-snapshot` |
+| "fecha o mês" / "reconcilia isso" / "quero organizar para o contador" | `/month-end-prep` |
+| "separa o material do contador" / "impostos" / "Simples" / "DAS" | `/tax-season-organizer` |
 
 ### Leads & marketing
 | Owner says something like... | Route to |
 |---|---|
-| "quais leads eu priorizo?" / "quem eu devo chamar hoje?" / "meu pipeline" | `/call-list` |
+| "quais leads eu priorizo?" / "quem eu devo chamar hoje?" / "meu pipeline" | `/lead-triage` |
 | "preciso vender mais" / "faz uma campanha" / "as vendas caíram" | `/run-campaign` |
-| "o que está vendendo?" / "o que eu devo promover?" | `/sales-brief` |
+| "o que eu devo postar?" / "me ajuda com conteúdo" | `/content-strategy` |
 
 ### Customers & operations
 | Owner says something like... | Route to |
 |---|---|
-| "o que os clientes estão dizendo?" / "tem muita reclamação?" / "reviews" | `/customer-pulse-check` |
-| "esse cliente está bravo" / "responde essa reclamação" / "quer reembolso" | `/handle-complaint` |
-| "organiza meu CRM" / "meu CRM está bagunçado" / "planilha de leads" | `/crm-cleanup` |
-| "revisa esse contrato" / "NDA" / "vale assinar?" | `/review-contract` |
-
-### Business rhythm
-| Owner says something like... | Route to |
-|---|---|
-| "o que eu preciso ver esta semana?" / "weekly check-in" / "segunda" | `/monday-brief` |
-| "como fechamos a semana?" / "sexta" / "resumo" | `/friday-brief` |
-| "quero revisão trimestral" / "QBR" / "resultado do trimestre" | `/quarterly-review` |
+| "o que os clientes estão dizendo?" / "tem muita reclamação?" / "reviews" | `/customer-pulse` |
+| "esse cliente está bravo" / "responde essa reclamação" / "quer reembolso" | `/ticket-deflector` |
+| "quem está me enrolando para pagar?" / "me ajuda a cobrar" | `/invoice-chase` |
 
 ### Getting started
 | Owner says something like... | Route to |
@@ -77,7 +68,7 @@ Before recommending a workflow, check whether the needed data can come from:
 If the best workflow is blocked, say so clearly.
 
 Good example:
-> "The best fit is `/plan-payroll`. If you don't have QuickBooks connected, we can still do it with Conta Azul/Omie exports, bank CSVs, or a spreadsheet of receivables. Want to start that way?"
+> "The best fit is `/plan-payroll`. If you don't have a live finance connector, we can still do it with Conta Azul/Omie exports, bank CSVs, or a receivables spreadsheet. Want to start that way?"
 
 Never silently push someone into a workflow that needs data they haven't provided.
 
@@ -85,10 +76,10 @@ Never silently push someone into a workflow that needs data they haven't provide
 
 When the owner asks "what can you do?", explain in four buckets:
 
-- **Seu caixa** — payroll pressure, collections, month-end, margins, accountant handoff
+- **Seu caixa** — payroll pressure, collections, month-end, accountant handoff
 - **Seus leads** — prioritize WhatsApp / Instagram / CRM leads, draft follow-up, campaign planning
 - **Seus clientes** — complaint handling, refund/recovery drafting, sentiment themes
-- **Sua rotina** — Monday brief, Friday brief, quarterly review
+- **Sua operação** — cleaner handoff packets, follow-up drafts, less admin chaos
 
 End with:
 > "What feels most urgent right now? I'll take you to the right workflow."
