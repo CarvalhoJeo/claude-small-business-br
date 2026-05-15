@@ -1,0 +1,6 @@
+ID;Data;Descrição;Tipo;Status;Valor bruto;Valor líquido;Tarifa;Meio de pagamento;Comprador;Referência externa
+1001;2026-05-01 10:00:00;Pedido 123 aprovado;payment;approved;R$ 150,00;R$ 145,20;R$ 4,80;pix;Ana Souza;PED-123
+1002;2026-05-02 11:30:00;Pedido 124 pendente;payment;pending;R$ 220,00;R$ 0,00;R$ 0,00;boleto;Carlos Lima;PED-124
+1003;2026-05-03 12:40:00;Estorno pedido 120;refund;refunded;R$ -80,00;R$ -80,00;R$ 0,00;account_money;Marina Costa;PED-120
+1004;2026-05-04 09:15:00;Chargeback pedido 119;chargeback;charged_back;R$ -99,90;R$ -99,90;R$ 0,00;credit_card;João Pedro;PED-119
+1005;2026-05-05 16:20:00;Pedido 125 aprovado;payment;approved;R$ 300,50;R$ 290,00;R$ 10,50;credit_card;Loja XPTO;PED-125

@@ -18,6 +18,8 @@ description: >
    - ticket system / CRM if present
    - Mercado Pago or marketplace dispute exports if available
    - pasted WhatsApp messages
+
+   If a Mercado Pago CSV export is provided, normalize it with `node scripts/mercado-pago-normalize.js <export.csv>` and treat refund/chargeback rows as evidence, not as a complete support history.
    - pasted Instagram DMs/comments
    - review text copied from Google / iFood / marketplace / social comments
 3. Group evidence into 3–5 themes.

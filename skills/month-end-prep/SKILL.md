@@ -27,6 +27,8 @@ Use the best available source mix:
 - payment exports (Pix, boleto, card/acquirer, Mercado Pago, Asaas)
 - invoice / NFS-e / NF-e summary when available
 
+If a Mercado Pago CSV is available, normalize it with `node scripts/mercado-pago-normalize.js <export.csv>` before reconciling so fees, pending inflows, refunds, and disputes are separated cleanly.
+
 ### Step 3 — Reconcile the basics
 Flag:
 - uncategorized or unclear transactions

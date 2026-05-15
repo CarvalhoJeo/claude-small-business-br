@@ -13,6 +13,7 @@ Implement these first.
    - Why: common for Pix, boleto, card payments, refunds, and disputes
    - Official docs checked: https://www.mercadopago.com.br/developers/pt/docs
    - Good fit for: `cash-flow-snapshot`, `invoice-chase`, `customer-pulse`
+   - Status in this repo: **import path implemented** via `scripts/mercado-pago-normalize.js` and tested against fixture data
 
 2. **Asaas**
    - Why: cobrança stack already used by many Brazilian SMBs
@@ -81,9 +82,9 @@ If a Brazilian business genuinely uses one of those tools, add it as an **option
 
 ## Suggested implementation order
 
-1. add import schemas for CSV / OFX / Pix / boleto exports
-2. add Mercado Pago support
-3. add one ERP integration: Omie *or* Conta Azul *or* Bling
-4. add WhatsApp ingestion / sync path
-5. add RD Station support
-6. add ecommerce support like Nuvemshop if the target audience needs it
+1. test the Mercado Pago import path against a real export and extend aliases as needed
+2. add one ERP integration: Omie *or* Conta Azul *or* Bling
+3. add WhatsApp ingestion / sync path
+4. add RD Station support
+5. add ecommerce support like Nuvemshop if the target audience needs it
+6. add broader import schemas for OFX / Pix / boleto exports beyond Mercado Pago

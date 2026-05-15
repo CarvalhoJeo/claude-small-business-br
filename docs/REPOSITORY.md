@@ -10,17 +10,18 @@
 - Apache 2.0 license included: yes
 - derivative notice included: yes
 - git repo initialized: yes
-- Claude Code plugin validation: expected via `npm run validate:plugin`
-- course/tutorial automation scaffolding: included in `scripts/`, `templates/`, and `docs/AUTOMATION-COURSE.md`
+- Claude Code plugin validation: `npm run validate:plugin`
+- first Brazil-first implementation artifact added: tested Mercado Pago CSV normalizer
+- active skill surface narrowed to localized skills only
 
 ## Main folders
 
 - `.claude-plugin/` — plugin manifest
-- `skills/` — workflow skills
-- `docs/` — repo notes and automation docs
-- `templates/course/` — reusable lesson / launch templates
-- `scripts/` — scaffolding scripts
-- `config/` — example course config
+- `skills/` — active localized workflow skills
+- `docs/` — localization notes, integration plans, import docs
+- `scripts/` — helper scripts like Mercado Pago normalization
+- `tests/` — import/tool tests and fixtures
+- `archive/` — nonlocalized original material kept out of the active plugin
 
 ## Publish checklist
 

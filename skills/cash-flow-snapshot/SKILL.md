@@ -33,6 +33,8 @@ Use any combination of:
 4. payment exports (Mercado Pago, Asaas, acquirer reports, Pix/boleto reports)
 5. pasted fixed-cost list
 
+When a Mercado Pago CSV is available, normalize it first with `node scripts/mercado-pago-normalize.js <export.csv>` and use the resulting settlement, pending, refund, and fee totals in the forecast.
+
 If the owner has no live connector, switch immediately to upload/manual mode.
 Do not treat that as failure.
 

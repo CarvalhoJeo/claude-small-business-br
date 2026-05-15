@@ -1,11 +1,10 @@
 # Localization backlog
 
 ## Highest priority
-- keep only localized skills active in `skills/`
-- remove default references to PayPal / QuickBooks / HubSpot as the plugin's implied stack
+- test the Mercado Pago import path against a real export and expand aliases where needed
 - define import schemas for Pix, boleto, CSV, OFX, NF-e / NFS-e, and WhatsApp lead logs
-- implement one Brazil-first payment connector (Mercado Pago or Asaas)
 - implement one Brazil-first ERP connector (Omie, Conta Azul, or Bling)
+- implement one more Brazil-first payment path after Mercado Pago (likely Asaas)
 
 ## Next priority
 - add more Portuguese examples

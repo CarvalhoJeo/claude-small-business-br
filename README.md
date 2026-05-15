@@ -57,6 +57,14 @@ These are better fits than talking about PayPal as a default:
 
 See `docs/BRAZIL-INTEGRATION-OPTIONS.md` for the implementation shortlist and the official docs checked.
 
+### First implemented import path
+The repo now includes a **tested Mercado Pago CSV normalization tool**:
+- script: `scripts/mercado-pago-normalize.js`
+- docs: `docs/MERCADO-PAGO-IMPORT.md`
+- test fixture: `tests/fixtures/mercado-pago-sample.csv`
+
+That gives the plugin a real finance/customer-support data path today, even before a live MCP connector exists.
+
 ### 3) Manual-first fallback
 For many Brazilian SMBs, this is still the most practical version 1:
 - CSV exports from ERP or bank
@@ -92,7 +100,8 @@ Capture:
 This repo is now deliberately scoped to the localized subset instead of pretending the whole original plugin is already adapted.
 
 Still needed:
-- implement Brazil-first adapters / MCP servers for the highest-value tools
+- test the Mercado Pago import path against a real export
+- implement one live Brazil-first adapter / MCP server for the highest-value tools
 - add more Portuguese examples
-- test with real connected accounts for Mercado Pago / ERP workflows
+- test with real connected accounts for ERP workflows
 - document import formats for WhatsApp, Pix, boleto, and accountant handoff packets

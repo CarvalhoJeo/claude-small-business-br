@@ -18,6 +18,8 @@ description: >
    - receivables spreadsheet
    - billing platform export
    - Mercado Pago / Asaas / boleto / Pix support export
+
+   If Mercado Pago CSV data is available, normalize it with `node scripts/mercado-pago-normalize.js <export.csv>` and use `collectionFollowUps` as a first-pass list of pending or owner-verification cases.
 2. Exclude anything marked as recently paid, under negotiation, or already promised for a near date.
 3. Rank each customer by:
    - amount due

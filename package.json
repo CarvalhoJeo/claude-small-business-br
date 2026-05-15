@@ -1,9 +1,12 @@
 {
   "name": "small-business-br",
   "private": true,
-  "version": "0.2.1-br-draft",
+  "version": "0.2.2-br-draft",
   "description": "Brazil-adapted small business plugin",
   "scripts": {
-    "validate:plugin": "npx -y @anthropic-ai/claude-code plugins validate ."
+    "validate:plugin": "npx -y @anthropic-ai/claude-code plugins validate .",
+    "test": "node --test tests/*.test.js",
+    "test:mercado-pago": "node --test tests/mercado-pago-normalize.test.js",
+    "mercado-pago:normalize": "node scripts/mercado-pago-normalize.js"
   }
 }
