@@ -1,0 +1,9 @@
+This repository contains a localized derivative of Anthropic's open-source
+`small-business` plugin from the `knowledge-work-plugins` project.
+
+Original source:
+https://github.com/anthropics/knowledge-work-plugins
+
+This fork adapts workflow instructions, documentation, and positioning for
+Brazilian small businesses. It remains subject to the original Apache 2.0
+license included in this repository.
