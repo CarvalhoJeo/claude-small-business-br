@@ -2,17 +2,69 @@
   "name": "small-business-br",
   "version": "0.2.2-br-draft",
   "description": "Brazil-first small business workflows focused on localized finance, collections, campaigns, customer support, and accountant handoff. US-centric original skills were archived until localized.",
-  "author": {
+  "owner": {
     "name": "Anthropic + local adaptation draft"
   },
-  "keywords": [
-    "smb",
-    "brazil",
-    "finance",
-    "marketing",
-    "hr",
-    "operations",
-    "all-in-one",
-    "small business"
+  "plugins": [
+    {
+      "name": "smb-router",
+      "source": "./skills/smb-router",
+      "description": "Brazil-first front door for the Small Business BR plugin. Routes vague or specific owner requests into the best workflow for the moment, using local realities like Pix, boleto, WhatsApp, Instagram, accountant handoff, and spreadsheet/CSV fallbacks when connectors are missing."
+    },
+    {
+      "name": "smb-onboard",
+      "source": "./skills/smb-onboard",
+      "description": "Brazil-first onboarding for SMB owners. Helps the owner map their real tool stack, choose one or two useful data sources, run a quick win workflow, and store business context for later skills."
+    },
+    {
+      "name": "cash-flow-snapshot",
+      "source": "./skills/cash-flow-snapshot",
+      "description": "Builds a 30/60/90-day cash flow view for a Brazilian small business using any mix of ERP exports, bank CSVs, receivables spreadsheets, Pix/boleto/card reports, Mercado Pago or Asaas exports, and pasted fixed-cost data."
+    },
+    {
+      "name": "plan-payroll",
+      "source": "./skills/plan-payroll",
+      "description": "Forecasts short-term cash, payroll pressure, and collections risk before payroll or pró-labore. Accepts CSV/manual fallback when no live finance connector exists."
+    },
+    {
+      "name": "invoice-chase",
+      "source": "./skills/invoice-chase",
+      "description": "Drafts overdue receivable follow-ups for Brazilian SMBs using ERP exports, receivables spreadsheets, billing platform exports, Mercado Pago / Asaas exports, or pasted collections data. Supports email-first and WhatsApp-ready follow-up drafts."
+    },
+    {
+      "name": "month-end-prep",
+      "source": "./skills/month-end-prep",
+      "description": "Walks a Brazilian SMB owner through month-end prep: reconcile ERP and bank exports, compare Pix/boleto/card settlements, flag uncategorized or doubtful items, and build an accountant handoff packet."
+    },
+    {
+      "name": "tax-season-organizer",
+      "source": "./skills/tax-season-organizer",
+      "description": "Organizes tax and accountant handoff materials for Brazilian SMBs. Focuses on document gathering, deadline awareness, regime-sensitive checklists, payroll / eSocial support materials, and Simples-related organization."
+    },
+    {
+      "name": "lead-triage",
+      "source": "./skills/lead-triage",
+      "description": "Prioritizes inbound leads for Brazilian SMBs using any mix of RD Station, spreadsheets, WhatsApp lead logs, Instagram DMs, CRM exports, or pasted sales notes. Produces a ranked follow-up list with talking points and draft messages."
+    },
+    {
+      "name": "content-strategy",
+      "source": "./skills/content-strategy",
+      "description": "Builds a 30-day content and offer brief for a Brazilian small business using sales data, channel context, seasonality, and owner priorities. Works from ERP exports, payment summaries, campaign notes, marketplace performance, or connected tools."
+    },
+    {
+      "name": "run-campaign",
+      "source": "./skills/run-campaign",
+      "description": "Runs a Brazil-first campaign workflow covering sales analysis, offer brief, content angles, asset checklist, and a channel plan for Instagram, WhatsApp, email, or mixed execution."
+    },
+    {
+      "name": "customer-pulse",
+      "source": "./skills/customer-pulse",
+      "description": "Aggregates customer complaints, disputes, tickets, WhatsApp excerpts, Instagram messages/comments, email threads, and pasted reviews into a themes report with verbatim evidence and a short action list."
+    },
+    {
+      "name": "ticket-deflector",
+      "source": "./skills/ticket-deflector",
+      "description": "Reads a customer complaint or refund request, gathers whatever context is available, and drafts a response in the owner's voice. Designed for Brazilian SMBs where complaints may arrive by WhatsApp, Instagram DM, email, ticketing tool, or payment dispute."
+    }
   ]
 }
